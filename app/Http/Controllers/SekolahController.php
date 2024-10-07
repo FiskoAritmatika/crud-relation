@@ -37,6 +37,7 @@ class SekolahController extends Controller
         $sekolah->sekolah = $request->sekolah;
         $sekolah->provinsi = $request->provinsi;
         $sekolah->kota = $request->kota;
+        $sekolah->category_id = $request->category;
         $sekolah->update();
 
         return redirect()->route('index');
